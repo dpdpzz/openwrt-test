@@ -50,14 +50,14 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     if: github.event.repository.owner.id == github.event.sender.id
 
     name: 启动${{matrix.target}}编译
     strategy:
       fail-fast: false
       matrix:
-        target: [Lienol_source]
+        target: [Mortal_source]
 
         # [Lede_source,Lienol_source,Mortal_source,Tianling_source,openwrt_amlogic,Lede_source-OrangePi_r1P]
 
